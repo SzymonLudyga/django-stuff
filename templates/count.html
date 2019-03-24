@@ -1,0 +1,15 @@
+<h1>COUNT: {{ count }}</h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+<br /><br /><br />
+
+{{ fulltext }}
+
+<h2>Most common word</h2>
+<br />
+{% for word, count in worddict %}
+
+{{ word }} - {{ count }}
+<br />
+
+{% endfor %}
